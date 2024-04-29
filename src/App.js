@@ -40,9 +40,9 @@ const App = () => {
   };
 
   return (
-    <div>
-      <h1 className='text-3xl text-blue'>To-Do List</h1>
-      <TodoDetails completed={completed} total={todos.length}/>
+    <div className="container mx-auto px-4 py-8">
+      <h1 className="text-3xl font-bold text-blue-600 mb-4">SSN To-Do List</h1>
+      <TodoDetails completed={completed} total={todos.length} />
       <AddTodo addTodo={addTodo} />
       <TodoList todos={todos} toggleTodo={toggleTodo} deleteTodo={deleteTodo} />
     </div>
